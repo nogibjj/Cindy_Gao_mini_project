@@ -31,6 +31,6 @@ jobs:
       - name: format with black 
         run: |
           make format
-      - name: deploy the app
-        run: |
-          make deploy
+      # - name: deploy the app
+      #   run: |
+      #     make deploy
