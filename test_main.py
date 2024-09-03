@@ -1,9 +1,11 @@
-from main import square
+from main import add
 
-def test_square():
+
+def test_add():
     """testing out add function"""
-    assert square(2,2) == 8
-    assert square(1,3) == 4
+    assert add(2, 2) == 4
+    assert add(1, 3) == 4
+
 
 if __name__ == "__main__":
-    test_square()
+    test_add()
