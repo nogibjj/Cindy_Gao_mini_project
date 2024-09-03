@@ -7,3 +7,4 @@
 - test.py
 - README
 - .devcontainer
+- .github/workflows
