@@ -1,10 +1,11 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/codespaces-linux/.devcontainer/base.Dockerfile
-
+# Dockerfile allows the developer to automate the process of setting up an environment by specifying the base image,
+# installing dependencies, copying files, setting environment variables, and defining the commands that should run
+# when the container starts.
 FROM mcr.microsoft.com/vscode/devcontainers/universal:2-focal
 
 # Dockerfile is a text file that contains a set of instructions used to create a Docker image. #
-# RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-#     && apt-get -y install --no-install-recommends <your-package-list-here>
+
 RUN apt-get update && apt-get -y install --no-install-recommends \
    python3.8-venv \
    gcc 
